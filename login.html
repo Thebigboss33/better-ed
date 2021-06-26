@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Ecole Directe | Se connecter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body onload="checkSession()">
+
+    <div class="top">
+        <div class="header"> 
+            <header class="header">
+                <nav class="navbar navbar-expand-lg fixed-top py-3">
+                    <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Better Ecole Directe</a>
+                        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                        
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a href="http://127.0.0.1:5500/index.html" class="nav-link text-uppercase font-weight-bold">Acceuil</a></li>
+                                <li class="nav-item"><a href="http://127.0.0.1:5500/about.html" class="nav-link text-uppercase font-weight-bold">Présentation</a></li>
+                                <li class="nav-item"><a href="http://127.0.0.1:5500/contact.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                                <li class="nav-item"><a href="http://127.0.0.1:5500/dashboard.html" class="nav-link text-uppercase font-weight-bold">Dashboard</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="titleDiv">
+            <h1 class="title is-1 is-spaced">Better Ecole Directe</h1>
+            <h2 class="subtitle is-1 is-spaced">Une version d'ecole directe améliorée</h2>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Se connecter</h1>
+        <div class="form">
+                <div class="field">
+                    <label class="label" for="identifiant">Identifiant :</label>
+                    <div class="control">
+                    <input class="input" type="text" id="identifiant">
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label" for="pass">Mot de passe :</label>
+                    <div class="control">
+                    <input class="input" type="password" id="pass">
+                </div>
+                <br>
+                <div class="field is-grouped">
+                    <div class="control">
+                    <button class="button is-link" onclick="sendLogin()">Se connecter</button>
+                    </div>
+                </div>
+                <br>
+                <div class="error" id="error"></div>
+        </div>
+    </div>
+    
+    <!-- <div class="footer">
+        <footer>
+            <p>Ceci est un footer</p>
+        </footer>
+    </div> -->
+
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/header.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
