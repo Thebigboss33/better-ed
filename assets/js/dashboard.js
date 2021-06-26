@@ -30,7 +30,7 @@ function checkSession(){
 
             }else{
                 window.sessionStorage.clear()
-                window.location = "http://127.0.0.1:5500/login.html"
+                window.location = "/login.html"
             }
 
         }).catch((e) => {
@@ -39,7 +39,7 @@ function checkSession(){
 
     }else{
         window.sessionStorage.clear()
-        window.location = "http://127.0.0.1:5500/login.html"
+        window.location = "/login.html"
     }
 
 }
