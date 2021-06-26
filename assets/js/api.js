@@ -12,7 +12,7 @@ function login (username, password){
             window.sessionStorage.clear();
             window.sessionStorage.setItem('token', res.data.token);
             window.sessionStorage.setItem('data', JSON.stringify(res.data.data.accounts[0]));
-            window.location = "http://127.0.0.1:5500/dashboard.html"
+            window.location = "/dashboard.html"
         }else{
             document.getElementById('error').innerHTML = "Erreur : " + JSON.stringify(res.data.message).slice(1,-1)
         }
