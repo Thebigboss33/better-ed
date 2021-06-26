@@ -12,7 +12,7 @@ function login (username, password){
             window.sessionStorage.clear();
             window.sessionStorage.setItem('token', res.data.token);
             window.sessionStorage.setItem('data', JSON.stringify(res.data.data.accounts[0]));
-            window.location = "/dashboard.html"
+            window.location = "http://thebigboss33.tech/better-ed/dashboard.html"
         }else{
             document.getElementById('error').innerHTML = "Erreur : " + JSON.stringify(res.data.message).slice(1,-1)
         }
