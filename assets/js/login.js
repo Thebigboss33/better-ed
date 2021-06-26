@@ -33,10 +33,10 @@ function checkSession(){
         ).then((res) => {
             
             if (res.data.code == 200) {
-                window.location = "/dashboard.html"
+                window.location = "http://thebigboss33.tech/better-ed/dashboard.html"
             }else{
                 window.sessionStorage.clear()
-                window.location = "/login.html"
+                window.location = "http://thebigboss33.tech/better-ed/login.html"
             }
 
         }).catch((e) => {
