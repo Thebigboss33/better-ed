@@ -33,10 +33,10 @@ function checkSession(){
         ).then((res) => {
             
             if (res.data.code == 200) {
-                window.location = "http://127.0.0.1:5500/dashboard.html"
+                window.location = "/dashboard.html"
             }else{
                 window.sessionStorage.clear()
-                window.location = "http://127.0.0.1:5500/login.html"
+                window.location = "/login.html"
             }
 
         }).catch((e) => {
