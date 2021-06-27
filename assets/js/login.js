@@ -33,10 +33,10 @@ function checkSession(){
         ).then((res) => {
             
             if (res.data.code == 200) {
-                window.location = "http://thebigboss33.tech/better-ed/dashboard.html"
+                window.location = "http://better-ecole-directe.ml/dashboard.html"
             }else{
                 window.sessionStorage.clear()
-                window.location = "http://thebigboss33.tech/better-ed/login.html"
+                window.location = "http://better-ecole-directe.ml/login.html"
             }
 
         }).catch((e) => {
