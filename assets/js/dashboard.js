@@ -30,7 +30,7 @@ function checkSession(){
 
             }else{
                 window.sessionStorage.clear()
-                window.location = "http://thebigboss33.tech/better-ed/login.html"
+                window.location = "http://better-ecole-directe.ml/login.html"
             }
 
         }).catch((e) => {
@@ -39,7 +39,7 @@ function checkSession(){
 
     }else{
         window.sessionStorage.clear()
-        window.location = "http://thebigboss33.tech/better-ed/login.html"
+        window.location = "http://better-ecole-directe.ml/login.html"
     }
 
 }
